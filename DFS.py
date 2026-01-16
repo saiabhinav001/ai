@@ -1,4 +1,16 @@
 def dfs(graph, node, visited=None):
+    """
+    Depth-First Search (DFS) algorithm for graph traversal.
+    
+    Args:
+        graph (dict): A dictionary representing the graph where keys are nodes
+                     and values are lists of adjacent nodes
+        node: The current node being visited
+        visited (set, optional): Set of already visited nodes. Defaults to None.
+    
+    Returns:
+        None: Prints the nodes in DFS traversal order
+    """
     if visited is None:
         visited = set()
     
